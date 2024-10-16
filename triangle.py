@@ -1,3 +1,4 @@
+# Программа рассчитывает третью сторону треугольника по двум сторонам и косинусу угла между ними
 import math
 
 
@@ -19,7 +20,7 @@ a = input('Введите длину стороны A: ')
 while not is_side(a):
     a = input('Неверный формат длины. Введите длину стороны a: ')
 a = float(a)
-    
+
 b = input('Введите длину стороны B: ')
 while not is_side(b):
     b = input('Неверный формат длины. Введите длину стороны b: ')
@@ -30,9 +31,5 @@ while not is_angle(ang):
     ang = input('Неверный формат угла. Введите угол a: ')
 ang = math.radians(float(ang))
 
-c = math.sqrt(a**2 + b**2 - 2*a*b*math.cos(ang))
+c = math.sqrt(a ** 2 + b ** 2 - 2 * a * b * math.cos(ang))
 print(c)
-
-
-
-    
