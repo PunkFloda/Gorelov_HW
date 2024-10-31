@@ -1,6 +1,6 @@
 # Программа принимает на вход число от 0 до 99, записанное цифрами, и выдает его в текстовом виде
 def is_num(num):  # Проверка корректности ввода
-    if num.isdigit() and -1 < int(num) < 100:
+    if num.isdigit() and -1 < int(num) < 100 and a[0] != '0':
         return True
     else:
         return False
@@ -26,7 +26,7 @@ while not is_num(a):  # Цикл не заканчивается, пока не 
 if len(a) == 1:
     print(units[a])
 elif int(a) > 19 and a[1] != '0':
-    print(f'{tens[a[0]]} {units[a[1]]}')
+   print(f'{tens[a[0]]} {units[a[1]]}')
 elif int(a) > 19:
     print(tens[a[0]])
 else:
