@@ -1,0 +1,132 @@
+.header {
+  background-color: #f2f2f2;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.head-content {
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+}
+.header-container {
+  display: flex;
+  justify-content: flex-start; /* Выравниваем элементы по левому краю */
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.head-content {
+  margin-right: 20px; /* Отступ от кнопок */
+}
+
+.menu {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.btn-group a {
+  text-decoration: none;
+  color: #333;
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 100px;
+  margin-left: 10px;
+}
+
+.btn-group a:not(:first-child) {
+  margin-left: 20px;
+}
+
+.btn-group a.active {
+    background-color: #4a90e2;
+    color: #fff;
+}
+
+/* Общие стили для всей страницы */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fb;  /* Светлый фон */
+    color: #333;                /* Темный текст */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Новый класс для контейнера основной части */
+.content-container {
+    margin-top: 80px; /* Отступ сверху от шапки */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 80%;
+    margin: 0 auto; /* Центрируем контейнер */
+}
+
+/* Стили для абзацев */
+p {
+    font-size: 1.1em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Форма */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;  /* Белый фон */
+    border-radius: 8px;        /* Скругленные углы */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 50%;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    resize: none;  /* Запрещаем изменение размера */
+    transition: border-color 0.3s;
+}
+
+textarea:focus {
+    border-color: #4a90e2;  /* Синий цвет при фокусе */
+    outline: none;
+}
+
+button {
+    padding: 12px 20px;
+    font-size: 1.1em;
+    color: white;
+    background-color: #4a90e2;  /* Синий фон */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #357ab7;  /* Темный синий при наведении */
+}
+
+button:active {
+    background-color: #28577a;  /* Еще более темный при клике */
+}
+
+/* Форма внутри контейнера */
+form {
+    /* Убираем лишние стили, которые были в глобальном CSS */
+    margin: 0;
+    padding: 0;
+    width: 100%;
